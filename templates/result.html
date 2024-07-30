@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Open Sans", sans-serif;
+            }
+            body {
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                width: 100vw;
+                height: 100vh;
+                background-color: #d1d1d1;
+            }
+    
+            .container-main {
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                border-radius: 2vh;
+                background-color: white;
+                padding: 1rem;
+                min-height: 30rem;
+            }
+    
+            .header {
+                display: flex;
+                width: 100%;
+                display: flex;
+                align-items: center;
+            }
+    
+            .fake {
+                height: 1rem;
+                width: 1rem;
+                margin: 0.1rem;
+                border-radius: 2rem;
+                background-color: blueviolet;
+            } 
+
+            h1 {
+                font-size: 1rem;
+                margin-left: 2rem;
+                font-weight: 600;
+            }
+
+            h2 {
+            margin: 0.5rem;
+            font-weight: 500;
+            font-size: 1.5rem;
+            }
+    
+            p {
+                display: flex;
+                flex-direction: column;
+                padding: 1rem;
+                background: hsl(0, 0%, 90%);
+                border-radius: 0.5rem;
+                box-sizing: content-box;
+
+            }
+    
+    
+            a{
+                margin-top: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: auto;
+                height: 2rem;
+                width: 100%;
+                border: 2px solid hsl(0, 0%, 75%);
+                border-radius: 0.5rem;
+                background: hsl(0, 0%, 85%);
+    
+                font-weight: 500;
+                font-size: 1rem;
+                color: hsl(0, 0%, 25%);
+                text-decoration: none;
+    
+                transition: all 0.2s ease-in-out;
+            }
+    
+            a:hover {
+                background-color: hsl(120, 100%, 25%);
+                border: none;
+                color: white;
+            }
+    
+        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR Result</title>
+</head>
+
+
+<body>
+    <div class="container-main">
+        <div class="header">
+            <span class="fake"></span>
+            <span class="fake"></span>
+            <span class="fake"></span>
+            <h1>ExtractOCR</h1>
+        </div>
+        <h2 >Extracted Text</h2>
+        <p>{{ text }}</p>
+
+    <a href="/">Upload another image</a>
+    <!-- Or use a button -->
+    <!-- <form action="/" method="get">
+        <button type="submit">Upload another image</button>
+    </form> -->
+</body>
+</html>
